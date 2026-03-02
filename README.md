@@ -1,12 +1,5 @@
 # Automated Timetable Generation System
 
-**AI-Powered Genetic Algorithm Scheduler with LLM Analysis**
-
-![Image](https://backend.krishnaik.in/media/project_architecture_diagrams/Architecture_diagram.png)
-
-![Image](https://raw.githubusercontent.com/EKarton/UofT-Timetable-Generator/master/docs/images/System%20Architecture.PNG)
-
-
 ---
 
 ## 📌 Overview
@@ -42,6 +35,10 @@ A timetable with **fitness ≥ 0** is considered conflict-free.
 
 # 🧠 Genetic Algorithm Design
 
+**Genetic Algorithm**
+
+![Image](https://github.com/Jayachandra2911/automatic_time_table_gen/blob/main/Genitic_Ai.jpeg)
+
 ## 1️⃣ Chromosome Structure
 
 * **Chromosome** → A complete timetable
@@ -56,7 +53,7 @@ A timetable with **fitness ≥ 0** is considered conflict-free.
 
 ---
 
-## 2️⃣ Initialization Phase
+## 2️⃣ Initialisation Phase
 
 **Population Size:** 150
 **Generations:** 500
@@ -96,7 +93,7 @@ Each timetable is evaluated using a weighted penalty system.
 
 ### Elitism
 
-Top 6 timetables automatically survive each generation.
+The top 6 timetables automatically survive each generation.
 
 ### Tournament Selection
 
@@ -104,15 +101,15 @@ Randomly select 5 → choose the best as parent.
 
 ### Crossover (Uniform)
 
-Each gene randomly inherited from Parent A or Parent B.
+Each gene is randomly inherited from Parent A or Parent B.
 
 ### Mutation Strategies
 
-* Move session to new timeslot
+* Move session to a new timeslot
 * Change faculty
 * Change room
 * Swap two sessions
-* Adaptive mutation rate increase if stagnation > 30 generations
+* Adaptive mutation rate increases if stagnation > 30 generations
 
 ### Early Stopping
 
@@ -121,6 +118,10 @@ If any timetable reaches fitness ≥ 0 → terminate immediately.
 ---
 
 # 🏗️ System Architecture
+
+**System Architecture**
+
+![Image](https://raw.githubusercontent.com/EKarton/UofT-Timetable-Generator/master/docs/images/System%20Architecture.PNG)
 
 ## High-Level Layers
 
@@ -156,13 +157,13 @@ Capabilities:
 
 * Timetable Q&A
 * Conflict analysis report
-* Optimization suggestions
+* Optimisation suggestions
 * Faculty workload insights
 
 ### 5. Frontend (Next.js + TypeScript)
 
 * Dashboard
-* Timetable visualization
+* Timetable visualisation
 * Conflict indicators
 * AI chat interface
 
@@ -211,6 +212,10 @@ project-root/
 | Background Tasks | FastAPI BackgroundTasks           | Non-blocking generation |
 
 ---
+
+# AI-Powered Genetic Algorithm Scheduler with LLM Analysis
+
+![Image](https://backend.krishnaik.in/media/project_architecture_diagrams/Architecture_diagram.png)
 
 # 🔌 API Endpoints
 
