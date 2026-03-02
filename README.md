@@ -6,9 +6,6 @@
 
 ![Image](https://raw.githubusercontent.com/EKarton/UofT-Timetable-Generator/master/docs/images/System%20Architecture.PNG)
 
-![Image](https://www.researchgate.net/publication/259043770/figure/fig1/AS%3A297272924491778%401447886796340/A-flowchart-of-genetic-algorithm-optimization.png)
-
-![Image](https://www.researchgate.net/publication/341737751/figure/fig1/AS%3A896578948714496%401590772487096/Process-of-making-a-scheduling-using-genetic-algorithms.ppm)
 
 ---
 
